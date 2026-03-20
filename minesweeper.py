@@ -205,7 +205,7 @@ class MinesweeperAI():
             sentence.mark_mine(mine)
         for safe in self.safes:
             sentence.mark_safe(safe)
-        if len(sentence.cell) > 0:
+        if len(sentence.cells) > 0:
             self.knowledge.append(sentence)
 
         for sentence in self.knowledge:
